@@ -84,9 +84,11 @@ https://pokeapi.co
 
 Criado por **Thiago Filiphe**
 
-GitHub:
+🐙 GitHub:
 https://github.com/thiagoocoding
 
----
+📸 Instagram:
+https://instagram.com/thiagocoding
 
-⭐ Se gostou do projeto, deixe uma estrela no repositório.
+💼 LinkedIn:
+https://www.linkedin.com/in/thiago-santana-989872131/?skipRedirect=true
