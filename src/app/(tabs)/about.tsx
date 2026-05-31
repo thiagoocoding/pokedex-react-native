@@ -13,6 +13,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const githubUrl = "https://github.com/thiagoocoding";
 const repositoryUrl = "https://github.com/thiagoocoding/pokedex-react-native";
+const instagramUrl = "https://www.instagram.com/thiagocoding";
+const linkedinUrl = "https://www.linkedin.com/in/thiago-santana-989872131/";
 
 export default function About() {
   function openLink(url: string) {
@@ -32,8 +34,8 @@ export default function About() {
         <Text style={styles.author}>Criado por @thiagocoding</Text>
 
         <Text style={styles.description}>
-          Pokédex desenvolvida com React Native, Expo Router, TypeScript, Axios,
-          Context API e AsyncStorage.
+          Pok{"\u00e9"}dex desenvolvida com React Native, Expo Router,
+          TypeScript, Axios, Context API e AsyncStorage.
         </Text>
 
         <View style={styles.infoBox}>
@@ -46,15 +48,35 @@ export default function About() {
             <Text style={styles.linkText}>{githubUrl}</Text>
           </Pressable>
 
-          <Text style={[styles.label, styles.repositoryLabel]}>
-            Repositório do projeto
+          <Text style={[styles.label, styles.linkLabel]}>
+            Reposit{"\u00f3"}rio do projeto
           </Text>
 
           <Pressable
             style={styles.linkButton}
             onPress={() => openLink(repositoryUrl)}>
             <Ionicons name='code-slash' size={20} color='#222' />
-            <Text style={styles.linkText}>thiagoocoding/pokedex-react-native</Text>
+            <Text style={styles.linkText}>
+              thiagoocoding/pokedex-react-native
+            </Text>
+          </Pressable>
+
+          <Text style={[styles.label, styles.linkLabel]}>Instagram</Text>
+
+          <Pressable
+            style={styles.linkButton}
+            onPress={() => openLink(instagramUrl)}>
+            <Ionicons name='logo-instagram' size={20} color='#222' />
+            <Text style={styles.linkText}>@thiagocoding</Text>
+          </Pressable>
+
+          <Text style={[styles.label, styles.linkLabel]}>LinkedIn</Text>
+
+          <Pressable
+            style={styles.linkButton}
+            onPress={() => openLink(linkedinUrl)}>
+            <Ionicons name='logo-linkedin' size={20} color='#222' />
+            <Text style={styles.linkText}>Thiago Santana</Text>
           </Pressable>
         </View>
       </View>
@@ -132,7 +154,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
 
-  repositoryLabel: {
+  linkLabel: {
     marginTop: 16,
   },
 

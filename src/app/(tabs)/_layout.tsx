@@ -9,7 +9,7 @@ export default function RootLayout() {
       <Tabs.Screen
         name='index'
         options={{
-          title: "Pokédex",
+          title: "Pok\u00e9dex",
           headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <Ionicons name='list' color={color} size={size} />

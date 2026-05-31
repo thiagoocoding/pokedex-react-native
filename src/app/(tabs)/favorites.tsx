@@ -15,6 +15,7 @@ export default function Favorites() {
         contentContainerStyle={styles.list}
         columnWrapperStyle={styles.row}
         keyExtractor={(item) => item.name}
+        ListEmptyComponent={<Text style={styles.emptyText}>Sem favoritos.</Text>}
         renderItem={({ item }) => {
           const id = item.url.split("/")[6];
 
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
   },
 
   list: {
+    flexGrow: 1,
     padding: 16,
   },
 
@@ -72,5 +74,14 @@ const styles = StyleSheet.create({
   image: {
     height: 90,
     width: 90,
+  },
+
+  emptyText: {
+    flex: 1,
+    textAlign: "center",
+    textAlignVertical: "center",
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#777",
   },
 });
